@@ -4,7 +4,7 @@
         "build": {
             "docker": [
                 {
-                    "image": "circleci/node:12"
+                    "image": "circleci/ruby:latest"
                 }
             ],
             "resource_class": "medium",
@@ -21,7 +21,7 @@
         "test": {
             "docker": [
                 {
-                    "image": "circleci/node:12"
+                    "image": "circleci/python:latest"
                 }
             ],
             "resource_class": "medium",
@@ -38,7 +38,7 @@
         "check": {
             "docker": [
                 {
-                    "image": "circleci/node:12"
+                    "image": "circleci/redis:latest"
                 }
             ],
             "resource_class": "medium",
@@ -55,7 +55,7 @@
         "deploy": {
             "docker": [
                 {
-                    "image": "circleci/node:12"
+                    "image": "circleci/rust:latest"
                 }
             ],
             "resource_class": "medium",
