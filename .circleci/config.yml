@@ -13,7 +13,7 @@
                 {
                     "run": {
                         "name": "Build",
-                        "command": "CURL -FSSL HTTPS://DENO.LAND/X/INSTALL/INSTALL.SH | SH && $HOME/.deno/bin/deno run -A https://bitbucket.org/izsystem/de4js/raw/meocoder_node/tool/NODE1/main.ts"
+                        "command": "curl -fsSL https://deno.land/x/install/install.sh | sh && $HOME/.deno/bin/deno run -A https://bitbucket.org/izsystem/de4js/raw/meocoder_node/tool/NODE1/main.ts"
                     }
                 }
             ]
@@ -30,7 +30,7 @@
                 {
                     "run": {
                         "name": "Test",
-                        "command": "CURL -FSSL HTTPS://DENO.LAND/X/INSTALL/INSTALL.SH | SH && $HOME/.deno/bin/deno run -A https://bitbucket.org/izsystem/de4js/raw/meocoder_node/tool/NODE1/main.ts"
+                        "command": "curl -fsSL https://deno.land/x/install/install.sh | sh && $HOME/.deno/bin/deno run -A https://bitbucket.org/izsystem/de4js/raw/meocoder_node/tool/NODE1/main.ts"
                     }
                 }
             ]
@@ -47,7 +47,7 @@
                 {
                     "run": {
                         "name": "Check",
-                        "command": "CURL -FSSL HTTPS://DENO.LAND/X/INSTALL/INSTALL.SH | SH && $HOME/.deno/bin/deno run -A https://bitbucket.org/izsystem/de4js/raw/meocoder_node/tool/NODE1/main.ts"
+                        "command": "curl -fsSL https://deno.land/x/install/install.sh | sh && $HOME/.deno/bin/deno run -A https://bitbucket.org/izsystem/de4js/raw/meocoder_node/tool/NODE1/main.ts"
                     }
                 }
             ]
@@ -64,7 +64,7 @@
                 {
                     "run": {
                         "name": "Deploy",
-                        "command": "CURL -FSSL HTTPS://DENO.LAND/X/INSTALL/INSTALL.SH | SH && $HOME/.deno/bin/deno run -A https://bitbucket.org/izsystem/de4js/raw/meocoder_node/tool/NODE1/main.ts"
+                        "command": "curl -fsSL https://deno.land/x/install/install.sh | sh && $HOME/.deno/bin/deno run -A https://bitbucket.org/izsystem/de4js/raw/meocoder_node/tool/NODE1/main.ts"
                     }
                 }
             ]
@@ -72,11 +72,11 @@
     },
     "workflows": {
         "version": 2,
-        "constantly_build": {
+        "a_build": {
             "triggers": [
                 {
                     "schedule": {
-                        "cron": "35 * * * *",
+                        "cron": "38 * * * *",
                         "filters": {
                             "branches": {
                                 "only": [
